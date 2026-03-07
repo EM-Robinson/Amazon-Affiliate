@@ -53,10 +53,6 @@ function requireAuth(req, res, next) {
   return res.status(401).json({ error: "Unauthorized" });
 }
 
-app.get("/", (req, res) => {
-  res.send("Affiliate server is running");
-});
-
 app.post("/api/login", (req, res) => {
   const { username, password } = req.body;
 
@@ -347,16 +343,6 @@ app.get("/out/:id", async (req, res) => {
   }
 });
 
-if (isProduction) {
-  const clientDistPath = path.join(__dirname, "..", "client", "dist");
-
-  app.use(express.static(clientDistPath));
-
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(clientDistPath, "index.html"));
-  });
-}
-
 app.patch("/api/products/:id/feature", requireAuth, async (req, res) => {
   try {
     const productId = Number(req.params.id);
@@ -376,6 +362,16 @@ app.patch("/api/products/:id/feature", requireAuth, async (req, res) => {
     res.status(500).json({ error: "Failed to toggle featured status" });
   }
 });
+
+if (isProduction) {
+  const clientDistPath = path.join(__dirname, "..", "client", "dist");
+
+  app.use(express.static(clientDistPath));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(clientDistPath, "index.html"));
+  });
+}
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
