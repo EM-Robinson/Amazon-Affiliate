@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Funny St. Patrick’s Day T-Shirt",
+    "description": "Perfect for parties, bar crawls, and festive last-minute outfits.",
+    "image": "https://via.placeholder.com/400x300?text=Shirt",
+    "affiliateUrl": "https://www.amazon.com/",
+    "category": "Clothing",
+    "active": true,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Leprechaun Hat",
+    "description": "Cheap, funny, and instantly on-theme for any party.",
+    "image": "https://via.placeholder.com/400x300?text=Hat",
+    "affiliateUrl": "https://www.amazon.com/",
+    "category": "Accessories",
+    "active": true,
+    "featured": true
+  }
+]
