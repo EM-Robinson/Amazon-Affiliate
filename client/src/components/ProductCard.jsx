@@ -10,15 +10,18 @@ export default function ProductCard({
   const redirectUrl = `${redirectBaseUrl}/out/${product.id}?src=${encodeURIComponent(source)}`;
 
   return (
-    <div className={featured ? "card featured-card" : "card"}>
+    <article className={featured ? "product-card featured-card" : "product-card"}>
       <ProductImage
         src={product.image}
         alt={product.title}
         featured={featured}
       />
 
-      <div className="card-body">
-        <span className="badge">{product.category}</span>
+      <div className="product-card-body">
+        <div className="product-card-meta">
+          <span className="product-badge">{product.category}</span>
+        </div>
+
         <h3>{product.title}</h3>
         <p>{product.description}</p>
 
@@ -26,11 +29,11 @@ export default function ProductCard({
           href={redirectUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="buy-button-link"
+          className="product-cta"
         >
-          Shop on Amazon
+          View Gear
         </a>
       </div>
-    </div>
+    </article>
   );
 }

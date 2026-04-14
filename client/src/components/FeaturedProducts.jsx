@@ -13,8 +13,12 @@ export default function FeaturedProducts({
   return (
     <section className="featured-section" id="featured">
       <div className="section-heading">
-        <h2>Featured Party Favorites</h2>
-        <p>Our best seasonal picks for outfits, hosting, and party vibes.</p>
+        <span className="section-kicker">Editor’s Picks</span>
+        <h2>Featured Player Picks</h2>
+        <p>
+          A few of the strongest training, match-day, and recovery picks on the
+          page right now.
+        </p>
       </div>
 
       <div className="featured-grid">

@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import ProductFilters from "../components/ProductFilters";
 import CategoryChips from "../components/CategoryChips";
 import FeaturedProducts from "../components/FeaturedProducts";
+import TrustStrip from "../components/TrustStrip";
 import "../styles.css";
 
 import { API_BASE_URL } from "../config";
@@ -96,7 +97,7 @@ export default function LandingPage() {
     <div className="page">
       <Header />
       <Disclosure />
-
+      <TrustStrip />
       <FeaturedProducts
         products={featuredProducts}
         redirectBaseUrl={API_BASE_URL}
@@ -107,7 +108,7 @@ export default function LandingPage() {
         <div className="section-heading">
           <h2>Browse by Category</h2>
           <p>
-            Quickly jump to outfits, accessories, decor, and party essentials.
+            Quickly shop cleats, training tools, match-day gear, recovery essentials and more.
           </p>
         </div>
 
@@ -135,15 +136,26 @@ export default function LandingPage() {
       <section className="products-section" id="products">
         <div className="section-heading">
           <h2>Shop All Products</h2>
-          <p>Hand-picked festive finds for parties, hosting, and going out.</p>
+          <p>A curated set of soccer picks for training sessions, weekend matches, and recovery.</p>
         </div>
 
         <main className="grid">
-          {loading && <p>Loading products...</p>}
-          {errorMessage && <p>{errorMessage}</p>}
+{loading && (
+  <div className="empty-state">
+    <h3>Loading gear...</h3>
+    <p>Please wait a moment.</p>
+  </div>
+)}
+
+{errorMessage && (
+  <div className="empty-state">
+    <h3>Something went wrong</h3>
+    <p>{errorMessage}</p>
+  </div>
+)}
           {!loading && !errorMessage && filteredProducts.length === 0 && (
             <div className="empty-state">
-              <h3>No matching products found</h3>
+              <h3>No matching gear found</h3>
               <p>Try a different search or category filter.</p>
             </div>
           )}
