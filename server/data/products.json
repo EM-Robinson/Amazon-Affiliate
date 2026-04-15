@@ -37,7 +37,7 @@
     "affiliateUrl": "https://www.amazon.com/Neuro-Energy-Focus-Extra-Strength/dp/B0F7LV59HV?crid=179URC9R11S7Y&dib=eyJ2IjoiMSJ9.LEkamPUMYTOEf-fy6W2DmDdniM95X1yuP_4RE163YiKLTCvifgWltcHqXJicajqTO9ouGZkIeE_stCuovt3VbFbPS7TcvstvCZd806ygldwkkaPEKcPHFF2VXFPNojdJWnwWr9EUTCmzIur5BOtgfhH9B07CZvLr9VzTSTQ7K5paIWlmB1XcLakeoeEMGKYR2EsvNPt9B4ukPVv37doDh8vO7Wxoz6UYaim76UCGJGl3b7Pza9YluV2okKXFnDQSShijch06vbxzUUraNt_hgMgu84VOUS83zKZvYEy9ueU.v8ueUaB_wTqKyyBRmX6tRt-QgMG9kycwhy7PIgL-UMc&dib_tag=se&keywords=neuro%2Bgum&qid=1776137650&rdc=1&sprefix=nuero%2Bgum%2Caps%2C282&sr=8-1&th=1&linkCode=ll2&tag=elijahr-20&linkId=b79ef94bf63aa2cd19d520e266a5677e&language=en_US&ref_=as_li_ss_tl",
     "category": "Match Day",
     "active": true,
-    "featured": true
+    "featured": false
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "affiliateUrl": "https://www.amazon.com/dp/B0CT54W6S6?th=1&linkCode=ll2&tag=elijahr-20&linkId=05872f88bcddc01b0d5f345b6a09bf94&language=en_US&ref_=as_li_ss_tl",
     "category": "Training",
     "active": true,
-    "featured": true
+    "featured": false
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "affiliateUrl": "https://www.amazon.com/dp/B097LTPXNZ?th=1&psc=1&linkCode=ll2&tag=elijahr-20&linkId=66a1d027ab32021da4fa67e44578bb3d&language=en_US&ref_=as_li_ss_tl",
     "category": "Training",
     "active": true,
-    "featured": true
+    "featured": false
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "affiliateUrl": "https://www.amazon.com/dp/B0BM892H45?th=1&linkCode=ll2&tag=elijahr-20&linkId=9026af7b8243ac21021ec793a2655f60&language=en_US&ref_=as_li_ss_tl",
     "category": "Training",
     "active": true,
-    "featured": true
+    "featured": false
   },
   {
     "id": 9,
@@ -87,6 +87,6 @@
     "affiliateUrl": "https://www.amazon.com/dp/B0DJWN9GJW?th=1&linkCode=ll2&tag=elijahr-20&linkId=7a44b1a42cbc44f14eeaa6555fbe5f0b&language=en_US&ref_=as_li_ss_tl",
     "category": "Training",
     "active": true,
-    "featured": true
+    "featured": false
   }
 ]
